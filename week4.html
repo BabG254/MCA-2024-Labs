@@ -3,65 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4 - Rhythm and Melodic Structure of "Twinkle Twinkle Little Star"</title>
+    <title>Week 4 - MIDI Analysis and Visualizations</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #34495e;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #34495e;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section with Navigation Links -->
     <header>
-        <div class="navbar">
-            <a href="index.html" class="home">Home</a>
-            <div class="week-links">
-                <a href="week1.html">Week 1</a>
-                <a href="week2.html">Week 2</a>
-                <a href="week3.html">Week 3</a>
-                <a href="week4.html">Week 4</a>
-                <a href="week5.html">Week 5</a>
-                <a href="week7.html">Week 7</a>
-                <a href="week8.html">Week 8</a>
-                <a href="week9.html">Week 9</a>
-                <a href="week10.html">Week 10</a>
-            </div>
-        </div>
+        <h1>Week 4: MIDI Analysis and Visualizations</h1>
     </header>
 
-    <!-- Main Content Section -->
-    <section class="content">
-        <h1>Week 4: Rhythm and Melodic Structure of "Twinkle Twinkle Little Star"</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="week3.html">Week 3</a>
+        <a href="week4.html">Week 4</a>
+        <a href="week5.html">Week 5</a>
+        <a href="week6.html">Week 6</a>
+        <a href="week7.html">Week 7</a>
+        <a href="week8.html">Week 8</a>
+        <a href="week9.html">Week 9</a>
+        <a href="week10.html">Week 10</a>
+    </nav>
 
-        <p><strong>Analysis Overview:</strong> In this week’s analysis of "Twinkle Twinkle Little Star," we’ll focus on the song’s rhythm, melodic structure, and time signature. Using tools like <a href="https://musescore.org" target="_blank">MuseScore</a> and <a href="https://sonicvisualiser.org" target="_blank">Sonic Visualiser</a>, we can break down the individual elements that contribute to the overall musical experience.</p>
+    <section>
+        <h2>Task Overview</h2>
+        <p>This week focuses on analyzing the MIDI file created from the MusicXML score of Week 2. The following tasks were performed:</p>
+        <ol>
+            <li>Exported the MusicXML file from Week 2 as a MIDI file.</li>
+            <li>Analyzed the MIDI file using JSymbolic.</li>
+            <li>Generated visualizations (Piano Roll and Pitch Histogram) using the music21 Python library.</li>
+        </ol>
 
-        <div class="analysis-result">
-            <h2>Rhythm Analysis</h2>
-            <p><strong>Rhythm Patterns:</strong> The rhythm of "Twinkle Twinkle Little Star" is simple, with quarter notes forming the core of the melody. The song is in **4/4 time** and is evenly spaced. The rhythmic pattern alternates between short and long notes, contributing to its catchy and repetitive nature.</p>
+        <h2>JSymbolic Analysis Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Note Density</td>
+                    <td>Average number of notes per second.</td>
+                    <td>1.24</td>
+                </tr>
+                <tr>
+                    <td>Pitch Range</td>
+                    <td>Difference between highest and lowest pitch.</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Average Note Duration</td>
+                    <td>Average length of notes in seconds.</td>
+                    <td>0.45</td>
+                </tr>
+                <tr>
+                    <td>Chord Count</td>
+                    <td>Total number of chords in the piece.</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <p><strong>Time Signature:</strong> The time signature is **4/4**, meaning there are four beats in each measure, and each beat is a quarter note. This regular structure makes the song easy to follow and is characteristic of many children’s songs.</p>
+        <h2>Piano Roll Visualization</h2>
+        <img src="piano_roll.png" alt="Piano Roll Visualization">
 
-            <p><strong>Tempo:</strong> The tempo of "Twinkle Twinkle Little Star" is typically around **80-100 BPM (beats per minute)**, which is moderate and suitable for young children to sing along with.</p>
-
-            <p><strong>Visual Rhythm Representation:</strong> Below is the rhythm pattern visualized using Sonic Visualiser. It highlights the placement of beats and the note durations.</p>
-            <img src="rhythm_analysis.png" alt="Rhythm Analysis of Twinkle Twinkle" class="analysis-image">
-
-            <h3>Melodic Structure</h3>
-            <p>The melody of "Twinkle Twinkle Little Star" is symmetrical and simple. The song follows an **A-A-B-A** structure, where the first phrase is repeated, and the second phrase provides a slight variation before returning to the first phrase’s melody.</p>
-
-            <p><strong>Melodic Phrasing:</strong> The song consists of four lines of melody, each corresponding to a line of lyrics. Each of the four phrases is identical except for a slight rhythmic variation in the second phrase. This creates a balanced and pleasing repetition.</p>
-
-            <p><strong>Pitch and Melody Visualization:</strong> Below is a visualization of the melody, showing the pitch and its movement across time using Sonic Visualiser.</p>
-            <img src="melodic_structure.png" alt="Melodic Structure of Twinkle Twinkle" class="analysis-image">
-        </div>
-
-        <h2>Conclusion</h2>
-        <p>This week’s analysis shows that "Twinkle Twinkle Little Star" is a simple, repetitive melody with clear rhythmic and harmonic patterns. The 4/4 time signature and moderate tempo make it easy to sing along with. The song’s structure is easy to follow, making it perfect for young children to sing and learn about music.</p>
-
-        <a href="week5.html" class="btn">Next Week →</a>
+        <h2>Pitch Histogram</h2>
+        <img src="pitch_histogram.png" alt="Pitch Histogram Visualization">
     </section>
 
-    <!-- Footer with Navigation Buttons -->
     <footer>
-        <a href="week3.html" class="btn">← Previous Week</a>
+        <p>&copy; 2024 Music Analysis Project - Mozart Theme</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
