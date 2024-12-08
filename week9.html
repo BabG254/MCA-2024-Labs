@@ -3,42 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 9 - Dynamic Range Analysis</title>
+    <title>Week 9 - Audio Feature Analysis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <a href="index.html" class="home">Home</a>
-            <div class="week-links">
-                <a href="week1.html">Week 1</a>
-                <a href="week2.html">Week 2</a>
-                <a href="week3.html">Week 3</a>
-                <a href="week4.html">Week 4</a>
-                <a href="week5.html">Week 5</a>
-                <a href="week7.html">Week 7</a>
-                <a href="week8.html">Week 8</a>
-                <a href="week9.html">Week 9</a>
-                <a href="week10.html">Week 10</a>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="week1.html">Week 1</a></li>
+                <li><a href="week2.html">Week 2</a></li>
+                <li><a href="week3.html">Week 3</a></li>
+                <li><a href="week4.html">Week 4</a></li>
+                <li><a href="week5.html">Week 5</a></li>
+                <li><a href="week6.html">Week 6</a></li>
+                <li><a href="week7.html">Week 7</a></li>
+                <li><a href="week8.html">Week 8</a></li>
+                <li><a href="week9.html" class="active">Week 9</a></li>
+                <li><a href="week10.html">Week 10</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="content">
-        <h1>Week 9: Dynamic Range Analysis</h1>
-        <p><strong>Overview:</strong> This week’s analysis explores the dynamic range of "Twinkle Twinkle Little Star," focusing on variations in loudness throughout the piece.</p>
+        <h1>Week 9: Audio Feature Extraction and Visualization</h1>
+        <p>This week, we analyze three Mozart pieces using Sonic Visualizer and Python. The features extracted include spectrograms, Mel Frequency Cepstral Coefficients (MFCC), and Chromagrams. These features are then visualized using histograms.</p>
 
-        <h2>Dynamic Patterns</h2>
-        <p>The song maintains a relatively consistent dynamic level, with slight increases during key melodic peaks.</p>
+        <h2>1. Spectrogram, MFCC, and Chromagram</h2>
+        <p>Below are the generated visualizations for the selected Mozart pieces:</p>
 
-        <h3>Visualization</h3>
-        <p>The dynamic range visualization shows changes in loudness across time:</p>
-        <img src="dynamic_range.png" alt="Dynamic Range Analysis" class="analysis-image">
+        <h3>Spectrograms</h3>
+        <img src="spectrogram1.png" alt="Spectrogram of Piece 1">
+        <img src="spectrogram2.png" alt="Spectrogram of Piece 2">
+        <img src="spectrogram3.png" alt="Spectrogram of Piece 3">
 
-        <a href="week10.html" class="btn">Next Week →</a>
+        <h3>MFCCs</h3>
+        <img src="mfcc1.png" alt="MFCC of Piece 1">
+        <img src="mfcc2.png" alt="MFCC of Piece 2">
+        <img src="mfcc3.png" alt="MFCC of Piece 3">
+
+        <h3>Chromagram</h3>
+        <img src="chromagram1.png" alt="Chromagram of Piece 1">
+        <img src="chromagram2.png" alt="Chromagram of Piece 2">
+        <img src="chromagram3.png" alt="Chromagram of Piece 3">
+
+        <h2>2. Feature Histograms</h2>
+        <p>The following histograms represent the distribution of features across the three pieces:</p>
+        <img src="feature_histogram1.png" alt="Feature Histogram of Piece 1">
+        <img src="feature_histogram2.png" alt="Feature Histogram of Piece 2">
+        <img src="feature_histogram3.png" alt="Feature Histogram of Piece 3">
+
+        <nav>
+            <a href="week8.html" class="button">Previous Week</a>
+            <a href="week10.html" class="button">Next Week</a>
+        </nav>
     </section>
 
     <footer>
-        <a href="week8.html" class="btn">← Previous Week</a>
+        <p>&copy; 2024 Music Analysis</p>
     </footer>
 </body>
 </html>

@@ -3,57 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 7 - Enhancing MEI File</title>
+    <title>Week 6 - Advanced MEI Notations</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f1f3f4;
+            background-color: #e9f7fc;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #34495e;
+            background-color: #2c3e50;
             color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
             text-align: center;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         nav a {
             text-decoration: none;
-            margin: 0 15px;
-            color: #3498db;
+            margin: 0 10px;
+            color: #2980b9;
             font-weight: bold;
         }
         nav a:hover {
-            color: #1abc9c;
+            color: #16a085;
         }
         section {
             max-width: 900px;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
         h2 {
-            color: #34495e;
+            color: #2c3e50;
             text-align: center;
         }
         pre {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border: 1px solid #bdc3c7;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
             border-radius: 5px;
             overflow-x: auto;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #34495e;
+            background-color: #2c3e50;
             color: white;
             position: fixed;
             width: 100%;
@@ -63,11 +63,12 @@
 </head>
 <body>
     <header>
-        <h1>Week 7: Final MEI Modifications</h1>
+        <h1>Week 6: Advanced Notations in MEI</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
+        <a href="week5.html">Week 5</a>
         <a href="week6.html">Week 6</a>
         <a href="week7.html">Week 7</a>
         <a href="week8.html">Week 8</a>
@@ -77,28 +78,28 @@
 
     <section>
         <h2>Task Overview</h2>
-        <p>This week, we will be making final enhancements to the MEI file from Week 6 by adding additional notations and refining the structure. These changes may include:</p>
+        <p>This week, we focused on advanced MEI notations, including:</p>
         <ul>
-            <li>Adding more articulations and dynamics for expressive performance.</li>
-            <li>Refining the graphical layout to improve the visual flow.</li>
-            <li>Testing the MEI file with Verovio to ensure all elements render correctly.</li>
+            <li>Adding slurs and beams.</li>
+            <li>Incorporating articulations like staccato and legato.</li>
+            <li>Adding dynamic markings for expression.</li>
         </ul>
 
         <h2>Updated MEI File</h2>
-        <p>The updated MEI file with additional elements can be viewed below:</p>
+        <p>The advanced notations can be viewed below:</p>
         <div>
             <!-- Embed Verovio visualization -->
-            <iframe src="final_mei_visualization.png" style="width:100%; height:500px; border:none;"></iframe>
+            <iframe src="advanced_mei_visualization.png" style="width:100%; height:500px; border:none;"></iframe>
         </div>
 
         <h2>MEI File Structure</h2>
-        <p>The updated MEI file structure with enhancements is shown below:</p>
+        <p>The updated MEI file structure with notations is shown below:</p>
         <pre>
 &lt;mei xmlns="https://www.verovio.org/mei-viewer.xhtml?musicxml=true&local=true"&gt;
   &lt;meiHead&gt;
     &lt;fileDesc&gt;
       &lt;titleStmt&gt;
-        &lt;title&gt;Twinkle Twinkle Little Star - Final Modifications&lt;/title&gt;
+        &lt;title&gt;Twinkle Twinkle Little Star - Advanced Notations&lt;/title&gt;
       &lt;/titleStmt&gt;
     &lt;/fileDesc&gt;
   &lt;/meiHead&gt;
@@ -110,8 +111,8 @@
         &lt;note pname="e" oct="4" dur="8"/&gt; 
         &lt;note pname="f" oct="4" dur="8"/&gt; 
       &lt;/beam&gt;
-      &lt;!-- Refined dynamic markings and articulations --&gt;
-      &lt;dynamic&gt;f&lt;/dynamic&gt;
+      &lt;!-- Added dynamics and slurs --&gt;
+      &lt;dynamic&gt;p&lt;/dynamic&gt;
       &lt;slur&gt;&lt;note pname="g" oct="4" dur="2"/&gt;&lt;/slur&gt;
     &lt;/body&gt;
   &lt;/music&gt;
