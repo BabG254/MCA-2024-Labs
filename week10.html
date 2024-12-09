@@ -43,6 +43,16 @@
             color: #34495e;
             text-align: center;
         }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 45%;
+            margin: 10px;
+            border: 2px solid #bdc3c7;
+            border-radius: 5px;
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -61,7 +71,6 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="week7.html">Week 7</a>
         <a href="week8.html">Week 8</a>
         <a href="week9.html">Week 9</a>
         <a href="week10.html" class="active">Week 10</a>
@@ -69,25 +78,48 @@
 
     <section>
         <h2>Task Overview</h2>
-        <p>This week, we summarize the findings and insights from the previous weeks. The analysis of "Twinkle Twinkle Little Star" in its various forms helped in understanding rhythm, harmony, and dynamics, paving the way for a deeper understanding of Mozart’s music.</p>
+        <p>This week, we perform two tasks focusing on audio similarity analysis and composition transcription.</p>
 
-        <h2>Key Insights</h2>
-        <ul>
-            <li><strong>Rhythm:</strong> Balanced and simple, supporting easy singability.</li>
-            <li><strong>Harmonics:</strong> Basic yet effective chord progressions in C major.</li>
-            <li><strong>Tempo:</strong> A steady 90 BPM ensures accessibility.</li>
-            <li><strong>Frequency Spectrum:</strong> Clean, with prominent harmonics.</li>
-            <li><strong>Dynamic Range:</strong> Subtle variations maintain interest.</li>
-        </ul>
+        <h2>Task 1: Similarity Analysis</h2>
+        <p>We converted the three tracks from Week 9 into a "Country" genre style, extracted Chroma features, and visualized the similarity matrices. Below are the outputs:</p>
 
-        <h2>Final Thoughts</h2>
-        <p>The project demonstrates how analyzing a simple melody like "Twinkle Twinkle Little Star" can provide deep insights into musical structure and analysis. This exploration forms a valuable foundation for understanding the complexities of Mozart's compositions.</p>
+        <div class="image-container">
+            <h3>Similarity Matrix Visualizations</h3>
+            <img src="similarity_matrix1.png" alt="Similarity Matrix for Piece 1">
+            <img src="similarity_matrix2.png" alt="Similarity Matrix for Piece 2">
+            <img src="similarity_matrix3.png" alt="Similarity Matrix for Piece 3">
+        </div>
 
-        <a href="index.html" class="btn">Return Home</a>
+        <div class="image-container">
+            <h3>Transcription Code Screenshot</h3>
+            <img src="transcription_code.png" alt="Transcription Code Screenshot">
+        </div>
+
+        <h2>Task 2: Composition Transcription</h2>
+        <p>For this task, compositions from the provided package were analyzed. Screenshots from MuseScore and Sonic Visualiser are presented below:</p>
+
+        <div class="image-container">
+            <h3>Composition Screenshots (MuseScore)</h3>
+            <img src="composition1.png" alt="Composition Screenshot 1">
+            <img src="composition2.png" alt="Composition Screenshot 2">
+        </div>
+
+        <div class="image-container">
+            <h3>WAV Visualizations (Sonic Visualiser)</h3>
+            <img src="wav_visualization1.png" alt="WAV Visualization 1">
+            <img src="wav_visualization2.png" alt="WAV Visualization 2">
+        </div>
+
+        <h3>Transcription Analysis</h3>
+        <p>The transcription accurately captured key melodic structures and rhythmic patterns. However, some dynamics and nuances, such as crescendos and subtle tempo shifts, were lost during the process. The comparison of the MIDI transcription with the original highlights these limitations while demonstrating the strengths of automated transcription tools.</p>
+
+        <nav>
+            <a href="week9.html" class="button">← Previous Week</a>
+            <a href="index.html" class="button">Return to Home</a>
+        </nav>
     </section>
 
     <footer>
-        <a href="week9.html" class="btn">← Previous Week</a>
         <p>&copy; 2024 Music Analysis Project - Mozart Theme</p>
     </footer>
 </body>
